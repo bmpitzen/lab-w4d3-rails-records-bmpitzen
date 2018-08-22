@@ -1,0 +1,21 @@
+<h1>This is a new album</h1>
+<%= form_with scope: :album, local: true do |form| %>
+<p>
+  <%= form.label :title %><br>
+  <%= form.text_field :title%>
+</p>
+
+<p>
+  <%= form.label :artist_name%><br>
+  <%= form.text_field :artist_name%>
+</p>
+
+<p>
+  <%= form.label :year%><br>
+  <%= form.text_field :year%>
+</p>
+<p>
+  <%= form.submit %>
+</p>
+
+<% end %>
