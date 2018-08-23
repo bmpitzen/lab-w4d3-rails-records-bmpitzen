@@ -1,5 +1,5 @@
 <h1>This is a new album</h1>
-<%= form_with scope: :album, local: true do |form| %>
+<%= form_with scope: :album, url: albums_path, local: true do |form| %>
 <p>
   <%= form.label :title %><br>
   <%= form.text_field :title%>
